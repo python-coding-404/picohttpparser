@@ -309,7 +309,7 @@ static const char *parse_headers(const char *buf, const char *buf_end, struct ph
             break;
         }
         if (*num_headers == max_headers) {
-            *ret = -1;
+            *ret = -3;
             return NULL;
         }
         if (!(*num_headers != 0 && (*buf == ' ' || *buf == '\t'))) {
